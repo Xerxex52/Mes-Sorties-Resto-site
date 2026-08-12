@@ -42,3 +42,18 @@
   footer{padding:20px 18px}
 }
 .plan-badge,.store-badge small{font-size:13px!important}
+
+/* Échelle typographique réellement lisible sur iPhone. */
+body{font-size:17px}
+.brand{font-size:16px}.top-cta{font-size:15px}.overline{font-size:15px;line-height:1.35}.hero-copy>p:not(.overline){font-size:18px;line-height:1.55}.primary-cta{font-size:17px}.hero ul{font-size:15px;line-height:1.35}.hero-screen>span{font-size:15px}.section-heading>p:last-child{font-size:17px;line-height:1.55}.screen-slider figcaption b{font-size:19px}.screen-slider figcaption span{font-size:16px}.swipe-hint{font-size:15px}.flow b{font-size:18px}.flow li p{font-size:16px;line-height:1.5}.flow li>span{font-size:15px}.feature-copy>p:not(.overline){font-size:17px;line-height:1.55}.micro-points span,.periods span{font-size:15px}.discover-list b{font-size:18px}.discover-list p{font-size:16px;line-height:1.5}.map-preview small{font-size:15px}.map-preview b{font-size:18px}.map-preview span{font-size:15px}.essential-grid b{font-size:18px}.essential-grid p{font-size:16px;line-height:1.45}.plan-head small{font-size:15px!important}.plan-head h3{font-size:22px}.plan-head>p{font-size:16px!important;line-height:1.5}.plan-features li{font-size:16px;line-height:1.5}.plan-note{font-size:15px!important;line-height:1.5}.plan-badge{font-size:15px!important}.plan-price span{font-size:15px!important}.download>p:not(.overline){font-size:16px;line-height:1.5}.store-badge small{font-size:15px!important}.store-badge b{font-size:19px}footer{font-size:15px}
+
+@media(max-width:759px){
+  .screen-slider figure{flex-basis:min(84vw,330px)}
+  .screen-slider figure>div{height:505px}
+  .section-heading h2,.feature-copy h2,.download h2{font-size:2.45rem}
+  .essential-grid{grid-template-columns:1fr}
+  .essential-grid article{min-height:0;padding:17px}
+  .essential-grid article>span{float:left;margin-right:13px}
+  .essential-grid b{margin-top:0;padding-top:2px}
+  .essential-grid p{margin-top:5px}
+}
