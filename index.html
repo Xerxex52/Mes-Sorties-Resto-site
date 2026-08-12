@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f6efe6">
-  <title>Mes Sorties Resto — Le carnet de vos bonnes tables</title>
-  <meta name="description" content="Gardez vos sorties, bonnes adresses, tickets et dépenses dans une app iPhone simple, privée et sans abonnement.">
+  <meta name="theme-color" content="#f4efe8">
+  <meta name="color-scheme" content="light">
+  <title>Mes Sorties Resto — Vos bonnes tables, enfin bien rangées</title>
+  <meta name="description" content="L’app iPhone qui garde vos sorties, bonnes adresses, tickets, notes et dépenses. Simple, privée, gratuite à télécharger et sans abonnement.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
-  <meta property="og:title" content="Mes Sorties Resto — Le carnet de vos bonnes tables">
-  <meta property="og:description" content="Une sortie saisie, l’adresse déjà rangée. Tickets, carte et budget réunis dans une app iPhone privée.">
+  <meta property="og:title" content="Mes Sorties Resto — Vos bonnes tables, enfin bien rangées">
+  <meta property="og:description" content="Retrouvez vos restaurants, scannez vos tickets et découvrez les bonnes tables autour de vous. Une app iPhone simple et privée.">
   <meta property="og:image" content="https://xerxex52.github.io/Mes-Sorties-Resto-site/assets/og-v2.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -20,206 +21,280 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#accueil" aria-label="Retour en haut">
-      <img src="assets/app-icon.png" width="44" height="44" alt="">
+    <a class="brand" href="#accueil" aria-label="Mes Sorties Resto, retour en haut">
+      <img src="assets/app-icon.png" width="42" height="42" alt="">
       <span>Mes Sorties Resto</span>
     </a>
     <nav aria-label="Navigation principale">
-      <a href="#comment-ca-marche">Comment ça marche</a>
-      <a href="#fonctions">Fonctions</a>
-      <a href="#offre">Prix</a>
+      <a href="#app">L’app</a>
+      <a href="#nouveautes">Nouveautés</a>
+      <a href="#complet">Version complète</a>
+      <a href="#questions">Questions</a>
     </nav>
-    <a class="header-cta" href="#telecharger">Bientôt sur l’App Store</a>
+    <a class="header-cta" href="#telecharger">Découvrir l’app</a>
   </header>
 
   <main>
     <section class="hero" id="accueil">
       <div class="hero-copy">
-        <p class="eyebrow"><span></span> Votre carnet de restaurants sur iPhone</p>
-        <h1>Les bons moments passent.<br><em>Les bonnes adresses restent.</em></h1>
-        <p class="hero-lead">Enregistrez une sortie une seule fois. L’adresse, le ticket, la note et la dépense restent ensuite faciles à retrouver — sans compte, sans publicité et sans abonnement.</p>
+        <p class="kicker"><span></span>Le carnet de restaurants pensé pour l’iPhone</p>
+        <h1>Vos bonnes tables.<br><em>Jamais oubliées.</em></h1>
+        <p class="hero-lead">Une seule app pour enregistrer vos sorties, retrouver une adresse, scanner un ticket et savoir où vous avez vraiment aimé manger.</p>
         <div class="hero-actions">
-          <a class="primary-button" href="#telecharger">Découvrir l’app</a>
-          <a class="text-link" href="#comment-ca-marche">Voir comment elle fonctionne <span>↓</span></a>
+          <a class="button button-primary" href="#telecharger">Voir l’app</a>
+          <a class="button button-quiet" href="#app">Comprendre en 60 secondes <span>↓</span></a>
         </div>
-        <div class="hero-proof" aria-label="Avantages principaux">
-          <div><strong>1 saisie</strong><span>pour la sortie et l’adresse</span></div>
-          <div><strong>100 % privé</strong><span>vos données restent locales</span></div>
-          <div><strong>9,99 €</strong><span>une fois, sans abonnement</span></div>
-        </div>
-      </div>
-
-      <div class="hero-product" aria-label="Écran principal de Mes Sorties Resto">
-        <div class="hero-orbit orbit-one"></div>
-        <div class="hero-orbit orbit-two"></div>
-        <div class="phone-crop">
-          <img src="assets/screen-sorties.png" alt="Écran Mes sorties avec trois sorties ce mois-ci et les trois restaurants correspondants">
-        </div>
-        <div class="proof-card proof-count"><b>3 sorties ce mois-ci</b><span>3 restaurants affichés</span></div>
-        <div class="proof-card proof-private"><b>Simple et privé</b><span>Aucun compte à créer</span></div>
-      </div>
-    </section>
-
-    <section class="promise-bar" aria-label="Résumé de l’application">
-      <p>Sorties</p><span>→</span><p>Adresses</p><span>→</span><p>Tickets</p><span>→</span><p>Carte</p><span>→</span><p>Budget</p>
-    </section>
-
-    <section class="section workflow" id="comment-ca-marche">
-      <div class="section-heading">
-        <p class="eyebrow"><span></span> Le principe</p>
-        <h2>Une sortie. Une seule saisie.<br><em>Tout le reste suit.</em></h2>
-        <p>Pas de chiffres décoratifs ni de promesses vagues : voici exactement ce qui se passe lorsque vous ajoutez un restaurant.</p>
-      </div>
-
-      <div class="workflow-grid">
-        <article>
-          <span class="step-number">01</span>
-          <div class="step-icon">＋</div>
-          <h3>Ajoutez votre sortie</h3>
-          <p>Le nom du restaurant, la date, le montant et votre note. Si vous avez été invité, le montant peut rester à zéro.</p>
-        </article>
-        <article>
-          <span class="step-number">02</span>
-          <div class="step-icon">⌖</div>
-          <h3>L’adresse se range</h3>
-          <p>Pour un nouveau restaurant, sa fiche est créée automatiquement. Les noms et adresses proches sont comparés pour éviter les doublons.</p>
-        </article>
-        <article>
-          <span class="step-number">03</span>
-          <div class="step-icon">✓</div>
-          <h3>Retrouvez tout</h3>
-          <p>Votre historique, vos envies, la carte et vos statistiques restent réunis dans le même carnet.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section stories" id="fonctions">
-      <article class="story story-scan">
-        <div class="story-copy">
-          <p class="chapter">01 · Moins de saisie</p>
-          <h2>Un ticket suffit.<br><em>Vous gardez le contrôle.</em></h2>
-          <p>Photographiez le ticket si vous le souhaitez. L’app préremplit le restaurant, la date et le total ; rien n’est enregistré avant votre validation.</p>
-          <ul class="check-list">
-            <li>Lecture réalisée sur l’iPhone</li>
-            <li>Photo conservée uniquement si vous le choisissez</li>
-            <li>Chaque information reste modifiable</li>
-          </ul>
-        </div>
-        <div class="screen-stage scan-stage">
-          <div class="mini-ticket"><small>MAISON SÉSAME</small><b>48,50 €</b></div>
-          <div class="screen-frame scan-frame">
-            <img src="assets/screen-scan.png" alt="Formulaire d’ajout d’une sortie avec position, note et bouton Scanner un ticket">
-          </div>
-          <div class="detected"><span>✓</span><b>Restaurant</b><b>Date</b><b>Montant</b></div>
-        </div>
-      </article>
-
-      <article class="story story-address">
-        <div class="story-copy">
-          <p class="chapter">02 · Zéro double saisie</p>
-          <h2>La sortie est créée.<br><em>L’adresse aussi.</em></h2>
-          <p>La fiche du restaurant rejoint votre carnet automatiquement. Vous pouvez ensuite la modifier, la partager, la mettre en favori ou la garder dans « À essayer ».</p>
-          <div class="flow-proof">
-            <div><span>＋</span><b>Une sortie ajoutée</b></div>
-            <i>→</i>
-            <div><span>⌖</span><b>Une fiche prête</b></div>
-          </div>
-        </div>
-        <div class="screen-stage address-stage">
-          <div class="screen-frame address-frame">
-            <img src="assets/screen-adresses.png" alt="Liste À essayer avec deux restaurants et leurs adresses">
-          </div>
-          <div class="stage-note"><b>Doublons repérés</b><span>Nom proche + adresse proche</span></div>
-        </div>
-      </article>
-
-      <article class="story story-map">
-        <div class="story-copy">
-          <p class="chapter">03 · Au bon endroit</p>
-          <h2>Vos adresses sur la carte.<br><em>Et les restaurants autour.</em></h2>
-          <p>Affichez uniquement vos favoris, vos envies ou les lieux déjà visités. Quand vous partez, lancez l’itinéraire dans Plans.</p>
-          <div class="filter-row"><span>Favoris</span><span>À essayer</span><span>Visités</span></div>
-        </div>
-        <div class="map-window">
-          <img src="assets/screen-carte.png" alt="Carte des restaurants avec différents marqueurs">
-          <div class="route-card"><small>QUAND VOUS PARTEZ</small><b>Y aller avec Plans</b><span>L’itinéraire en un geste →</span></div>
-        </div>
-      </article>
-
-      <article class="story story-stats">
-        <div class="story-copy">
-          <p class="chapter">04 · Des chiffres utiles</p>
-          <h2>Votre budget resto.<br><em>Enfin lisible.</em></h2>
-          <p>Consultez le mois, les trois derniers mois ou l’année. Les montants, cuisines et restaurants les plus visités utilisent les mêmes sorties : pas de calcul parallèle, pas d’incohérence.</p>
-          <div class="periods"><b>Mois</b><b>3 mois</b><b>Année</b></div>
-        </div>
-        <div class="screen-stage stats-stage">
-          <div class="screen-frame stats-frame">
-            <img src="assets/screen-stats.png" alt="Statistiques du mois avec trois sorties, trois restaurants et 157,30 euros">
-          </div>
-          <div class="stats-proof"><strong>3</strong><span>sorties</span><strong>3</strong><span>restaurants</span></div>
-        </div>
-      </article>
-    </section>
-
-    <section class="section everything">
-      <div class="section-heading compact">
-        <p class="eyebrow"><span></span> Tout dans le même carnet</p>
-        <h2>Assez complet pour être utile.<br><em>Assez simple pour servir.</em></h2>
-      </div>
-      <div class="capability-grid">
-        <article><span>⌕</span><h3>Recherche &amp; filtres</h3><p>Restaurant, cuisine, ville, note ou période.</p></article>
-        <article><span>☆</span><h3>À essayer</h3><p>Gardez les prochaines tables qui vous font envie.</p></article>
-        <article><span>↗</span><h3>Partager</h3><p>Nom, adresse et type de cuisine en quelques gestes.</p></article>
-        <article><span>↓</span><h3>Exporter</h3><p>Sauvegarde et rapports PDF à conserver.</p></article>
-      </div>
-    </section>
-
-    <section class="section offer" id="offre">
-      <div class="offer-copy">
-        <p class="eyebrow light"><span></span> Une offre claire</p>
-        <h2>Téléchargez gratuitement.<br><em>Débloquez une seule fois.</em></h2>
-        <p>Les fonctions essentielles permettent de vraiment essayer l’app. La Version complète enlève les limites pour 9,99 €, sans abonnement.</p>
-        <div class="offer-badges"><span>Sans compte</span><span>Sans publicité</span><span>Données locales</span></div>
-      </div>
-      <div class="price-card">
-        <p>Mes Sorties Resto Complet</p>
-        <div><strong>9,99 €</strong><span>achat unique</span></div>
-        <ul>
-          <li>Sorties et adresses illimitées</li>
-          <li>Scans de tickets illimités</li>
-          <li>Bilans sur 3 mois et sur l’année</li>
-          <li>Restaurants autour de vous</li>
-          <li>Rapports PDF</li>
+        <ul class="trust-line" aria-label="Points forts">
+          <li>Sans compte</li>
+          <li>Sans publicité</li>
+          <li>Achat unique</li>
         </ul>
-        <a href="#telecharger">Télécharger d’abord gratuitement</a>
+      </div>
+
+      <div class="hero-visual" aria-label="Aperçu de l’écran principal">
+        <div class="sun-disc"></div>
+        <p class="vertical-note">SORTIES · ADRESSES · ENVIES</p>
+        <div class="phone phone-hero">
+          <span class="dynamic-island" aria-hidden="true"></span>
+          <img src="assets/screen-sorties.png" alt="L’écran principal affiche trois sorties récentes et trois restaurants correspondants">
+        </div>
+        <div class="float-card float-place">
+          <span class="float-icon">⌖</span>
+          <div><b>Adresse retrouvée</b><small>À moins d’1 km</small></div>
+        </div>
+        <div class="float-card float-rating">
+          <small>VOTRE NOTE</small><b>★★★★<span>★</span></b>
+        </div>
+        <div class="float-card float-invited">
+          <b>Invité ?</b><small>La sortie peut rester à 0 €</small>
+        </div>
       </div>
     </section>
 
-    <section class="section privacy" id="confidentialite">
-      <div class="privacy-mark"><span>✓</span></div>
-      <div>
-        <p class="eyebrow"><span></span> Votre carnet reste le vôtre</p>
-        <h2>Privé par conception.</h2>
-        <p>Vos notes, dépenses, adresses et photos restent sur votre iPhone. Aucun compte à créer, aucun profil publicitaire et aucun suivi.</p>
-        <a href="privacy.html">Lire la politique de confidentialité →</a>
+    <section class="value-strip" aria-label="Résumé des bénéfices">
+      <article><strong>01</strong><span><b>Retenir</b> vos meilleures tables</span></article>
+      <article><strong>02</strong><span><b>Retrouver</b> une adresse sans la ressaisir</span></article>
+      <article><strong>03</strong><span><b>Décider</b> où sortir, près de vous</span></article>
+    </section>
+
+    <section class="section intro" id="app">
+      <div class="section-title centered">
+        <p class="kicker"><span></span>Concrètement</p>
+        <h2>Moins de saisie.<br><em>Plus de bons souvenirs.</em></h2>
+        <p>Mes Sorties Resto relie chaque visite à une vraie fiche restaurant. Vous ne faites pas deux fois le même travail.</p>
+      </div>
+
+      <div class="journey">
+        <article class="journey-card">
+          <div class="journey-top"><span>1</span><small>PENDANT OU APRÈS LA SORTIE</small></div>
+          <h3>Enregistrez l’essentiel</h3>
+          <p>Restaurant, montant, date et note. Ajoutez des compagnons, une occasion ou un commentaire uniquement si vous en avez envie.</p>
+          <div class="mini-form" aria-hidden="true">
+            <div><span>Restaurant</span><b>Au Bureau</b></div>
+            <div class="mini-form-row"><span>Montant</span><b>48,00 €</b></div>
+            <div class="mini-stars">★★★★<span>★</span></div>
+          </div>
+        </article>
+        <article class="journey-card journey-featured">
+          <div class="journey-top"><span>2</span><small>L’APP VOUS FAIT GAGNER DU TEMPS</small></div>
+          <h3>L’adresse suit automatiquement</h3>
+          <p>Choisissez un restaurant habituel ou laissez l’app proposer les adresses les plus proches. La nouvelle fiche rejoint votre carnet, sans doublon.</p>
+          <div class="address-match" aria-hidden="true">
+            <span>⌖</span><div><b>Au Bureau · Massy</b><small>Adresse reconnue et enregistrée</small></div><i>✓</i>
+          </div>
+        </article>
+        <article class="journey-card">
+          <div class="journey-top"><span>3</span><small>QUAND VOUS EN AVEZ BESOIN</small></div>
+          <h3>Retrouvez et partagez</h3>
+          <p>Recherchez par ville, cuisine, note ou période. Partagez le nom et l’adresse, affichez le lieu sur la carte ou lancez l’itinéraire.</p>
+          <div class="search-demo" aria-hidden="true"><span>⌕</span><b>Italien à Lyon</b></div>
+          <div class="search-tags" aria-hidden="true"><span>Favoris</span><span>À essayer</span><span>4 étoiles</span></div>
+        </article>
       </div>
     </section>
 
-    <section class="section final-cta" id="telecharger">
-      <img src="assets/app-icon.png" width="104" height="104" alt="Icône Mes Sorties Resto">
-      <p class="eyebrow light"><span></span> Bientôt sur l’App Store</p>
-      <h2>Votre prochaine bonne adresse<br><em>mérite mieux qu’un oubli.</em></h2>
-      <p>Mes Sorties Resto arrive sur iPhone. Téléchargement gratuit, Version complète en achat unique.</p>
-      <span class="app-store-badge"><small>Bientôt disponible sur</small><b>l’App Store</b></span>
+    <section class="feature-section scan-section">
+      <div class="feature-media">
+        <div class="feature-number">01</div>
+        <div class="phone phone-tall">
+          <span class="dynamic-island" aria-hidden="true"></span>
+          <img src="assets/screen-scan.png" alt="Ajout d’une sortie avec l’option Scanner un ticket">
+        </div>
+        <div class="receipt" aria-hidden="true">
+          <small>MAISON SÉSAME</small>
+          <span>2 menus</span><span>Boissons</span>
+          <i></i>
+          <b>48,50 €</b>
+        </div>
+        <div class="scan-result" aria-hidden="true"><span>✓</span><b>Nom</b><b>Date</b><b>Montant</b></div>
+      </div>
+      <div class="feature-copy">
+        <p class="kicker light"><span></span>Scan de ticket</p>
+        <h2>Photographiez.<br><em>L’app prépare la sortie.</em></h2>
+        <p>Le nom, la date et le montant sont lus sur l’iPhone. Vous vérifiez chaque information avant d’enregistrer — et une seule photo suffit.</p>
+        <ul class="feature-list">
+          <li><span>✓</span>Détection automatique, sans rafale de photos</li>
+          <li><span>✓</span>Informations toujours modifiables</li>
+          <li><span>✓</span>Photo conservée seulement si vous le souhaitez</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section nearby" id="nouveautes">
+      <div class="nearby-copy">
+        <p class="kicker"><span></span>Nouveau · Autour de moi</p>
+        <h2>Une envie précise ?<br><em>Regardez autour.</em></h2>
+        <p>La carte ne se contente plus d’afficher des points. Cherchez ce qui correspond vraiment au moment : un bar, un café, une boulangerie ou une cuisine particulière.</p>
+        <div class="filter-demo" aria-label="Exemples de filtres disponibles">
+          <span class="active">Restaurants</span><span>Bars</span><span>Cafés</span><span>Boulangeries</span>
+        </div>
+        <div class="query-demo" aria-hidden="true"><span>⌕</span><b>indien, brunch, cocktails…</b></div>
+        <div class="nearby-points">
+          <div><b>1, 5 ou 10 km</b><small>Choisissez le rayon</small></div>
+          <div><b>Itinéraire direct</b><small>Partez avec Plans</small></div>
+          <div><b>À essayer</b><small>Gardez l’adresse pour plus tard</small></div>
+        </div>
+      </div>
+      <div class="map-composition">
+        <div class="map-panel">
+          <img src="assets/screen-carte.png" alt="Carte avec les restaurants enregistrés et les établissements autour de soi">
+        </div>
+        <div class="map-search-card">
+          <small>AUTOUR DE MOI</small>
+          <b>3 bars à proximité</b>
+          <span>Dans un rayon de 5 km</span>
+        </div>
+        <div class="map-pin pin-one">●</div>
+        <div class="map-pin pin-two">●</div>
+      </div>
+    </section>
+
+    <section class="section new-tools">
+      <div class="section-title">
+        <p class="kicker"><span></span>Les détails qui changent tout</p>
+        <h2>Plus rapide à utiliser.<br><em>Encore plus simple à corriger.</em></h2>
+      </div>
+      <div class="tools-grid">
+        <article class="tool-card rating-tool">
+          <span class="new-badge">NOUVEAU</span>
+          <div class="gesture-line" aria-hidden="true"><span>Indiana Café</span><b>Noter ★</b></div>
+          <h3>Notez sans ouvrir la fiche</h3>
+          <p>Balayez la sortie vers la droite ou maintenez votre doigt dessus. Les cinq étoiles apparaissent immédiatement.</p>
+        </article>
+        <article class="tool-card regular-tool">
+          <span class="new-badge">NOUVEAU</span>
+          <div class="regular-list" aria-hidden="true"><b>Vos restaurants habituels</b><span>Réduire⌃</span><small>Au Bureau · 8 visites</small><small>Indiana Café · 4 visites</small></div>
+          <h3>Vos habituels, à portée de pouce</h3>
+          <p>Les lieux fréquents sont proposés en premier. Ouvrez ou réduisez la liste pour garder un formulaire compact.</p>
+        </article>
+        <article class="tool-card correction-tool">
+          <span class="new-badge">NOUVEAU</span>
+          <div class="clear-fields" aria-hidden="true"><span>Restaurant <i>×</i></span><span>Adresse <i>×</i></span><button>Tout effacer</button></div>
+          <h3>Une erreur se corrige en un geste</h3>
+          <p>Effacez séparément le nom, la cuisine, l’adresse ou la ville — ou repartez d’un formulaire propre.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="feature-section stats-section">
+      <div class="feature-copy">
+        <p class="kicker light"><span></span>Votre carnet devient utile</p>
+        <h2>Les souvenirs d’un côté.<br><em>Les chiffres de l’autre.</em></h2>
+        <p>Voyez ce que vous dépensez, les cuisines que vous choisissez et les restaurants où vous revenez. Au mois, sur trois mois ou sur l’année.</p>
+        <div class="stat-chips"><span>Mois</span><span>3 mois</span><span>Année</span></div>
+        <p class="small-note">Une sortie où vous avez été invité reste dans votre historique, même avec un montant de 0 €.</p>
+      </div>
+      <div class="feature-media stats-media">
+        <div class="phone phone-tall">
+          <span class="dynamic-island" aria-hidden="true"></span>
+          <img src="assets/screen-stats.png" alt="Statistiques avec le total, le nombre de sorties, les restaurants et les cuisines">
+        </div>
+        <div class="stat-float"><small>CE MOIS-CI</small><b>157,30 €</b><span>3 sorties · 3 restaurants</span></div>
+      </div>
+    </section>
+
+    <section class="section library">
+      <div class="section-title centered">
+        <p class="kicker"><span></span>Tout reste relié</p>
+        <h2>Votre mémoire des restaurants.<br><em>Dans votre poche.</em></h2>
+      </div>
+      <div class="library-grid">
+        <article>
+          <div class="library-icon">⌖</div>
+          <h3>Bonnes adresses</h3>
+          <p>Fiches, cuisine, photos, favoris, partage et itinéraire au même endroit.</p>
+        </article>
+        <article>
+          <div class="library-icon">☆</div>
+          <h3>À essayer</h3>
+          <p>Gardez les tables qui vous font envie avant qu’elles disparaissent dans vos messages.</p>
+        </article>
+        <article>
+          <div class="library-icon">↗</div>
+          <h3>Partage simple</h3>
+          <p>Envoyez le nom, l’adresse et le type de cuisine à vos amis.</p>
+        </article>
+        <article>
+          <div class="library-icon">☰</div>
+          <h3>Historique maîtrisé</h3>
+          <p>Modifiez une sortie, notez-la rapidement ou supprimez-la avec les gestes natifs d’iOS.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section pricing" id="complet">
+      <div class="pricing-intro">
+        <p class="kicker"><span></span>Pas d’abonnement</p>
+        <h2>Essayez gratuitement.<br><em>Gardez-la pour 9,99 €.</em></h2>
+        <p>L’app se télécharge gratuitement. La Version complète se débloque ensuite par un seul achat, pour toujours.</p>
+        <div class="privacy-pills"><span>Sans compte</span><span>Sans publicité</span><span>Sans suivi</span></div>
+      </div>
+      <div class="plans" aria-label="Comparaison des versions">
+        <article class="plan plan-free">
+          <p>Pour découvrir</p><h3>Gratuit</h3><strong>0 €</strong>
+          <ul>
+            <li>10 sorties</li><li>10 adresses</li><li>5 lieux « À essayer »</li><li>2 scans de ticket</li><li>Sauvegarde complète</li>
+          </ul>
+        </article>
+        <article class="plan plan-pro">
+          <span class="plan-label">TOUT DÉBLOQUER</span>
+          <p>Pour en profiter sans limite</p><h3>Version complète</h3>
+          <div class="price"><strong>9,99 €</strong><span>une seule fois</span></div>
+          <ul>
+            <li>Sorties, adresses et envies illimitées</li><li>Scans de ticket illimités</li><li>Statistiques avancées</li><li>Recherche « Autour de moi »</li><li>Rapports PDF</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section faq" id="questions">
+      <div class="section-title">
+        <p class="kicker"><span></span>Questions fréquentes</p>
+        <h2>Avant de passer<br><em>à table.</em></h2>
+      </div>
+      <div class="faq-list">
+        <details><summary>Mes données sont-elles envoyées ailleurs ?<span>＋</span></summary><p>Non. Vos sorties, notes, dépenses, adresses et photos restent sur votre iPhone. Aucun compte n’est nécessaire.</p></details>
+        <details><summary>Puis-je enregistrer une sortie à 0 € ?<span>＋</span></summary><p>Oui. Si vous avez été invité, la sortie reste bien dans votre historique sans fausser votre budget.</p></details>
+        <details><summary>La recherche automatique d’adresse est-elle obligatoire ?<span>＋</span></summary><p>Non. Vous choisissez pendant l’onboarding si vous souhaitez l’activer, et ce réglage reste modifiable ensuite.</p></details>
+        <details><summary>La Version complète est-elle un abonnement ?<span>＋</span></summary><p>Non. C’est un achat unique de 9,99 €, sans paiement mensuel ni annuel.</p></details>
+        <details><summary>Sur quels appareils l’app fonctionne-t-elle ?<span>＋</span></summary><p>Mes Sorties Resto est conçue pour l’iPhone et compatible à partir d’iOS 18.</p></details>
+      </div>
+    </section>
+
+    <section class="final-cta" id="telecharger">
+      <div class="final-glow"></div>
+      <img src="assets/app-icon.png" width="108" height="108" alt="Icône de Mes Sorties Resto">
+      <p class="kicker light"><span></span>Bientôt sur l’App Store</p>
+      <h2>La prochaine bonne adresse<br><em>commence ici.</em></h2>
+      <p>Téléchargement gratuit sur iPhone. Version complète disponible ensuite en achat unique.</p>
+      <div class="store-badge" aria-label="Bientôt disponible sur l’App Store"><span>●</span><div><small>Bientôt disponible sur</small><b>l’App Store</b></div></div>
     </section>
   </main>
 
   <footer>
-    <a class="brand" href="#accueil"><img src="assets/app-icon.png" width="40" height="40" alt=""><span>Mes Sorties Resto</span></a>
-    <p>Les bons moments passent. Les bonnes adresses restent.</p>
-    <nav><a href="#fonctions">Fonctions</a><a href="#offre">Prix</a><a href="privacy.html">Confidentialité</a></nav>
-    <small>© 2026 Soheil Ramezani</small>
+    <div class="footer-brand"><img src="assets/app-icon.png" width="44" height="44" alt=""><div><b>Mes Sorties Resto</b><span>Vos bonnes tables, jamais oubliées.</span></div></div>
+    <nav aria-label="Navigation de pied de page"><a href="#app">L’app</a><a href="#nouveautes">Nouveautés</a><a href="#complet">Prix</a><a href="privacy.html">Confidentialité</a></nav>
+    <small>© 2026 Soheil Ramezani. Tous droits réservés.</small>
   </footer>
 </body>
 </html>
