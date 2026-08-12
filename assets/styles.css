@@ -5,3 +5,40 @@
 .price .section-heading>p:last-child{color:#d7c2b7}.price-grid{grid-template-columns:1fr;gap:12px;align-items:stretch}.plan-card{position:relative;padding:23px 20px!important;color:var(--ink)!important;background:var(--cream)!important;border-radius:21px!important}.plan-head small{color:var(--terra)!important;font-size:.53rem!important;font-weight:900;letter-spacing:.1em}.plan-head h3{margin:7px 0 0;font-size:1.25rem;letter-spacing:-.03em}.plan-head strong{display:block!important;margin-top:5px!important;font-size:2rem!important;letter-spacing:-.055em}.plan-head>p{margin:7px 0 0!important;color:var(--muted)!important;font-size:.7rem!important;line-height:1.45}.plan-features{margin:19px 0 0;padding:17px 0 0;border-top:1px solid var(--line);list-style:none}.plan-features li{position:relative;margin:10px 0;padding-left:20px;color:var(--muted);font-size:.72rem;line-height:1.4}.plan-features li:before{content:"✓";position:absolute;left:0;color:var(--terra);font-weight:900}.plan-features b{color:var(--ink)}.plan-note{margin:17px 0 0!important;padding:12px;color:var(--muted)!important;background:rgba(201,86,50,.07);border-radius:12px;font-size:.64rem!important;line-height:1.45}.price-grid .complete{padding-top:28px!important;color:white!important;background:var(--terra)!important;box-shadow:0 15px 32px rgba(0,0,0,.2)}.plan-badge{position:absolute;right:15px;top:-8px;padding:5px 8px;color:var(--terra-dark);background:#f6d7c8;border-radius:999px;font-size:.48rem!important;font-weight:900;letter-spacing:.08em}.complete .plan-head small,.complete .plan-head>p,.complete .plan-features li,.complete .plan-note{color:rgba(255,255,255,.8)!important}.complete .plan-features{border-color:rgba(255,255,255,.2)}.complete .plan-features li:before{color:white}.complete .plan-features b{color:white}.complete .plan-note{background:rgba(73,28,16,.15)}.plan-price{display:flex!important;align-items:baseline!important;gap:7px!important}.plan-price strong{display:block!important}.plan-price span{font-size:.58rem!important}
 .price-grid .complete>.plan-head{display:block!important}.price-grid .complete .plan-price{display:flex!important;align-items:baseline!important;gap:7px!important}
 @media(min-width:760px){.price-grid{grid-template-columns:1fr 1fr}.plan-card{height:100%}}
+
+/* Lisibilité : aucune information utile sous 13 px. */
+.brand{font-size:14px}.top-cta{font-size:13px}.overline{font-size:13px}.hero-copy>p:not(.overline){font-size:16px}.primary-cta{font-size:15px}.hero ul{font-size:13px}.hero-screen>span{left:15px;right:15px;bottom:7px;font-size:13px;text-align:center}.section-heading>p:last-child{font-size:15px}.screen-slider figcaption b{font-size:17px}.screen-slider figcaption span{font-size:14px}.swipe-hint{font-size:13px}.flow b{font-size:17px}.flow li p{font-size:15px}.flow li>span{font-size:13px}.feature-copy>p:not(.overline){font-size:15px}.micro-points span,.periods span{font-size:13px}.discover-list b{font-size:17px}.discover-list p{font-size:15px}.map-preview small{font-size:13px}.map-preview b{font-size:17px}.map-preview span{font-size:14px}.essential-grid b{font-size:16px}.essential-grid p{font-size:14px}.plan-head small{font-size:13px!important}.plan-head>p{font-size:14px!important}.plan-features li{font-size:15px}.plan-note{font-size:13px!important}.plan-badge{font-size:12px!important}.plan-price span{font-size:13px!important}.download>p:not(.overline){font-size:14px}.store-badge small{font-size:12px}.store-badge b{font-size:18px}footer{font-size:13px}
+
+@media(max-width:759px){
+  .topbar{height:58px}
+  .hero{padding:32px 18px 0}
+  .hero h1{margin-bottom:14px}
+  .hero-copy>p:not(.overline){margin-bottom:17px;line-height:1.5}
+  .hero ul{margin:14px 0 19px;gap:10px}
+  .hero-screen{height:400px}
+  .screen-shell{height:386px}
+  .screens,.flow,.discover,.essentials,.price{padding:42px 18px}
+  .section-heading{margin-bottom:20px}
+  .section-heading.compact{margin-bottom:19px}
+  .section-heading h2,.feature-copy h2,.download h2{margin-bottom:10px}
+  .screen-slider{padding-bottom:11px}
+  .screen-slider figure>div{height:420px}
+  .screen-slider figcaption{padding-top:9px}
+  .flow li{padding:12px 0}
+  .feature-card{min-height:500px;padding:36px 18px 0}
+  .feature-copy>p:not(.overline){margin-bottom:12px;line-height:1.48}
+  .feature-screen{height:280px;margin-top:20px}
+  .discover-list article{padding:12px 0}
+  .map-preview{height:290px;margin-top:20px}
+  .map-preview>div{padding:11px 13px}
+  .essential-grid article{min-height:120px;padding:13px}
+  .essential-grid b{margin-top:10px}
+  .price .section-heading{margin-bottom:22px}
+  .plan-card{padding:20px 18px!important}
+  .plan-features{margin-top:15px;padding-top:14px}
+  .plan-features li{margin:9px 0}
+  .plan-note{margin-top:14px!important}
+  .download{padding:50px 20px}
+  footer{padding:20px 18px}
+}
+.plan-badge,.store-badge small{font-size:13px!important}
