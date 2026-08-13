@@ -6,69 +6,43 @@
 .price-grid .complete>.plan-head{display:block!important}.price-grid .complete .plan-price{display:flex!important;align-items:baseline!important;gap:7px!important}
 @media(min-width:760px){.price-grid{grid-template-columns:1fr 1fr}.plan-card{height:100%}}
 
-/* Lisibilité : aucune information utile sous 13 px. */
-.brand{font-size:14px}.top-cta{font-size:13px}.overline{font-size:13px}.hero-copy>p:not(.overline){font-size:16px}.primary-cta{font-size:15px}.hero ul{font-size:13px}.hero-screen>span{left:15px;right:15px;bottom:7px;font-size:13px;text-align:center}.section-heading>p:last-child{font-size:15px}.screen-slider figcaption b{font-size:17px}.screen-slider figcaption span{font-size:14px}.swipe-hint{font-size:13px}.flow b{font-size:17px}.flow li p{font-size:15px}.flow li>span{font-size:13px}.feature-copy>p:not(.overline){font-size:15px}.micro-points span,.periods span{font-size:13px}.discover-list b{font-size:17px}.discover-list p{font-size:15px}.map-preview small{font-size:13px}.map-preview b{font-size:17px}.map-preview span{font-size:14px}.essential-grid b{font-size:16px}.essential-grid p{font-size:14px}.plan-head small{font-size:13px!important}.plan-head>p{font-size:14px!important}.plan-features li{font-size:15px}.plan-note{font-size:13px!important}.plan-badge{font-size:12px!important}.plan-price span{font-size:13px!important}.download>p:not(.overline){font-size:14px}.store-badge small{font-size:12px}.store-badge b{font-size:18px}footer{font-size:13px}
-
-@media(max-width:759px){
-  .topbar{height:58px}
-  .hero{padding:32px 18px 0}
-  .hero h1{margin-bottom:14px}
-  .hero-copy>p:not(.overline){margin-bottom:17px;line-height:1.5}
-  .hero ul{margin:14px 0 19px;gap:10px}
-  .hero-screen{height:400px}
-  .screen-shell{height:386px}
-  .screens,.flow,.discover,.essentials,.price{padding:42px 18px}
-  .section-heading{margin-bottom:20px}
-  .section-heading.compact{margin-bottom:19px}
-  .section-heading h2,.feature-copy h2,.download h2{margin-bottom:10px}
-  .screen-slider{padding-bottom:11px}
-  .screen-slider figure>div{height:420px}
-  .screen-slider figcaption{padding-top:9px}
-  .flow li{padding:12px 0}
-  .feature-card{min-height:500px;padding:36px 18px 0}
-  .feature-copy>p:not(.overline){margin-bottom:12px;line-height:1.48}
-  .feature-screen{height:280px;margin-top:20px}
-  .discover-list article{padding:12px 0}
-  .map-preview{height:290px;margin-top:20px}
-  .map-preview>div{padding:11px 13px}
-  .essential-grid article{min-height:120px;padding:13px}
-  .essential-grid b{margin-top:10px}
-  .price .section-heading{margin-bottom:22px}
-  .plan-card{padding:20px 18px!important}
-  .plan-features{margin-top:15px;padding-top:14px}
-  .plan-features li{margin:9px 0}
-  .plan-note{margin-top:14px!important}
-  .download{padding:50px 20px}
-  footer{padding:20px 18px}
+/*
+ * Échelle typographique unique.
+ * Toutes les tailles éditoriales sont pilotées ici : aucune surcouche mobile
+ * n'est ajoutée plus bas dans le fichier.
+ */
+:root{
+  --type-label:14px;
+  --type-small:15px;
+  --type-body:17px;
+  --type-lead:19px;
+  --type-title:20px;
+  --type-section:clamp(42px,11vw,52px);
 }
-.plan-badge,.store-badge small{font-size:13px!important}
-
-/* Échelle typographique réellement lisible sur iPhone. */
-body{font-size:17px}
-.brand{font-size:16px}.top-cta{font-size:15px}.overline{font-size:15px;line-height:1.35}.hero-copy>p:not(.overline){font-size:18px;line-height:1.55}.primary-cta{font-size:17px}.hero ul{font-size:15px;line-height:1.35}.hero-screen>span{font-size:15px}.section-heading>p:last-child{font-size:17px;line-height:1.55}.screen-slider figcaption b{font-size:19px}.screen-slider figcaption span{font-size:16px}.swipe-hint{font-size:15px}.flow b{font-size:18px}.flow li p{font-size:16px;line-height:1.5}.flow li>span{font-size:15px}.feature-copy>p:not(.overline){font-size:17px;line-height:1.55}.micro-points span,.periods span{font-size:15px}.discover-list b{font-size:18px}.discover-list p{font-size:16px;line-height:1.5}.map-preview small{font-size:15px}.map-preview b{font-size:18px}.map-preview span{font-size:15px}.essential-grid b{font-size:18px}.essential-grid p{font-size:16px;line-height:1.45}.plan-head small{font-size:15px!important}.plan-head h3{font-size:22px}.plan-head>p{font-size:16px!important;line-height:1.5}.plan-features li{font-size:16px;line-height:1.5}.plan-note{font-size:15px!important;line-height:1.5}.plan-badge{font-size:15px!important}.plan-price span{font-size:15px!important}.download>p:not(.overline){font-size:16px;line-height:1.5}.store-badge small{font-size:15px!important}.store-badge b{font-size:19px}footer{font-size:15px}
+body{font-size:var(--type-body)}
+.brand{font-size:16px}.top-cta{font-size:15px}.overline{font-size:var(--type-label);line-height:1.35}
+.hero h1{font-size:clamp(51px,13vw,61px)}.hero-copy>p:not(.overline){font-size:var(--type-lead);line-height:1.55}
+.primary-cta{font-size:17px}.hero ul{font-size:var(--type-small);line-height:1.35}.hero-screen>span{left:15px;right:15px;bottom:7px;font-size:var(--type-label);text-align:center}
+.section-heading h2,.feature-copy h2,.download h2{font-size:var(--type-section)}.section-heading>p:last-child{font-size:var(--type-body);line-height:1.55}
+.screen-slider figcaption b,.flow b,.discover-list b,.map-preview b,.essential-grid b{font-size:var(--type-title)}
+.screen-slider figcaption span,.flow li p,.discover-list p,.essential-grid p{font-size:var(--type-body);line-height:1.5}
+.swipe-hint,.flow li>span,.micro-points span,.periods span,.map-preview small{font-size:var(--type-label)}.map-preview span{font-size:var(--type-small)}
+.feature-copy>p:not(.overline){font-size:var(--type-body);line-height:1.55}
+.plan-head small{font-size:var(--type-label)!important}.plan-head h3{font-size:24px}.plan-head strong{font-size:40px!important}.plan-head>p{font-size:var(--type-body)!important;line-height:1.5}
+.plan-features li{margin:11px 0;font-size:var(--type-body);line-height:1.5}.plan-features li:before{font-size:var(--type-body)}.plan-note{font-size:var(--type-small)!important;line-height:1.5}.plan-badge{font-size:13px!important}.plan-price span{font-size:var(--type-label)!important}
+.download>p:not(.overline){font-size:var(--type-body);line-height:1.5}.store-badge small{font-size:13px!important}.store-badge b{font-size:20px}footer{font-size:var(--type-small)}
 
 @media(max-width:759px){
-  .screen-slider figure{flex-basis:min(84vw,330px)}
-  .screen-slider figure>div{height:505px}
-  .section-heading h2,.feature-copy h2,.download h2{font-size:2.45rem}
-  .essential-grid{grid-template-columns:1fr}
-  .essential-grid article{min-height:0;padding:17px}
-  .essential-grid article>span{float:left;margin-right:13px}
-  .essential-grid b{margin-top:0;padding-top:2px}
-  .essential-grid p{margin-top:5px}
+  .topbar{height:60px}.hero{padding:34px 18px 0}.hero h1{margin-bottom:16px}.hero-copy>p:not(.overline){margin-bottom:19px}.hero ul{margin:15px 0 21px;gap:10px}
+  .hero-screen{height:410px}.screen-shell{height:396px}.screens,.flow,.discover,.essentials,.price{padding:40px 18px}.section-heading{margin-bottom:22px}.section-heading.compact{margin-bottom:20px}
+  .section-heading h2,.feature-copy h2,.download h2{margin-bottom:11px}.screen-slider{padding-bottom:12px}.screen-slider figure{flex-basis:min(84vw,330px)}.screen-slider figure>div{height:505px}.screen-slider figcaption{padding-top:10px}
+  .flow li{padding:14px 0}.feature-card{min-height:490px;padding:34px 18px 0}.feature-copy>p:not(.overline){margin-bottom:13px}.feature-screen{height:270px;margin-top:19px}
+  .discover-list article{padding:14px 0}.map-preview{height:300px;margin-top:22px}.map-preview>div{padding:12px 14px}
+  .essential-grid{grid-template-columns:1fr}.essential-grid article{min-height:0;padding:17px}.essential-grid article>span{float:left;margin-right:13px}.essential-grid b{margin-top:0;padding-top:2px}.essential-grid p{margin-top:5px}
+  .price .section-heading{margin-bottom:24px}.plan-card{padding:23px 20px!important}.plan-features{margin-top:17px;padding-top:16px}.plan-note{margin-top:15px!important;padding:14px}.download{padding:52px 20px}footer{padding:21px 18px}
 }
 
-/* Taille confortable validée sur un véritable écran d’iPhone. */
-body{font-size:19px}
-.brand{font-size:17px}.top-cta{font-size:16px}.overline{font-size:16px}.hero-copy>p:not(.overline){font-size:19px}.primary-cta{font-size:18px}.hero ul{font-size:16px}.hero-screen>span{font-size:16px}.section-heading>p:last-child{font-size:18px}.screen-slider figcaption b{font-size:20px}.screen-slider figcaption span{font-size:18px}.swipe-hint{font-size:16px}.flow b{font-size:20px}.flow li p{font-size:18px}.flow li>span{font-size:16px}.feature-copy>p:not(.overline){font-size:18px}.micro-points span,.periods span{font-size:16px}.discover-list b{font-size:20px}.discover-list p{font-size:18px}.map-preview small{font-size:16px}.map-preview b{font-size:20px}.map-preview span{font-size:17px}.essential-grid b{font-size:20px}.essential-grid p{font-size:18px}.plan-head small{font-size:16px!important}.plan-head h3{font-size:26px}.plan-head strong{font-size:42px!important}.plan-head>p{font-size:18px!important}.plan-features li{margin:13px 0;font-size:19px;line-height:1.48}.plan-features li:before{font-size:19px}.plan-note{font-size:17px!important;line-height:1.5}.plan-badge{font-size:15px!important}.plan-price span{font-size:16px!important}.download>p:not(.overline){font-size:18px}.store-badge small{font-size:15px!important}.store-badge b{font-size:21px}footer{font-size:16px}
-
-@media(max-width:759px){
-  .screens,.flow,.discover,.essentials,.price{padding-top:36px;padding-bottom:36px}
-  .section-heading{margin-bottom:18px}
-  .feature-card{min-height:470px;padding-top:31px}
-  .feature-screen{height:255px;margin-top:17px}
-  .discover-list article{padding:14px 0}
-  .plan-card{padding:24px 21px!important}
-  .plan-features{margin-top:18px;padding-top:17px}
-  .plan-note{padding:15px}
+@media(min-width:760px){
+  :root{--type-label:15px;--type-small:16px;--type-body:18px;--type-lead:20px;--type-title:20px;--type-section:clamp(50px,4.4vw,66px)}
+  .brand{font-size:17px}.top-cta{font-size:16px}.hero h1{font-size:clamp(75px,6.8vw,92px)}.primary-cta{font-size:18px}.plan-head h3{font-size:26px}.plan-head strong{font-size:44px!important}
 }
